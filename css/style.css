@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{    /* Hide Scrollbar  */
+    display: none;
+  }
+
+.container {
+    border: 1px solid rgba(0, 0, 0, 0); /* change transparent to 0 */
+
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%; 
+}
+
+.header h1 {
+    text-transform: uppercase;
+}
+
+.image-container {
+    background-image: url('../img/profile1.jpg');
+    background-position: center;
+    background-size: cover;   
+    clip-path: circle(50% at 50% 50%);
+    height: 450px;
+    margin: 2rem auto;
+    width: 450px;  
+}
+
+.navigation ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    padding: 1rem;
+    width: 16rem;
+}
+.navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    width: 75%;
+}
+.main-container div {
+    margin-bottom: 2rem;
+}
+.main-container h1 {
+    margin-bottom: 5rem;
+}
+.main-container p {
+    text-align: justify;
+}
+
+
+.footer {
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+.footer ul {
+    list-style: none;
+    /* margin-bottom: 1rem; */
+}
+.footer ul li {
+    display: inline-block;
+    margin: 2rem;
+}
+.footer ul a {
+    color: #777;
+    text-decoration: none;
+}
+.footer p {
+    color: #777;
+    text-decoration: none;
+}
+
+
+@media (min-width: 480px) {
+    /*change image-container background image*/
+    .image-container {
+        background-image: url('../img/profile1.jpg');
+    }
+
+    /*change document's background colour*/
+    /*change document's text colour*/
+    .container {
+        background-color: rgba(255, 0, 0, 0.135);
+        color: darkred;
+        width: 100%;
+    }
+
+    /*do not forget about borders!*/
+    .navigation ul li {
+        border: 2px solid violet;
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+    .navigation ul li:not(:last-child){
+        border: 2px solid violet;
+        border-bottom: none;
+    }
+  
+    .main-container {
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        margin: 1rem auto;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    /*change image-container background image*/
+    .image-container {
+        background-image: url('../img/profile2.jpg');
+    }
+
+    /*change document's background colour*/
+    /*change document's text colour*/
+    .container {
+        background-color: rgba(255, 255, 0, 0.135);
+        color: rgb(129, 129, 0);
+    }
+
+    /*do not forget about borders!*/
+    .navigation ul li {
+        border: 2px solid rgb(211, 211, 94);
+    }
+    .navigation ul li:not(:last-child){
+        border: 2px solid rgb(211, 211, 94);
+        border-bottom: none;
+    }
+}
+
+
+@media (min-width: 1024px){
+        
+    /*change image-container background image*/
+    .image-container {
+        background-image: url('../img/profile3.jpg');
+    }
+
+    /*change document's background colour*/
+    /*change document's text colour*/
+    .container {
+        background-color: rgb(0, 128, 0, 0.135);
+        color: green;
+    }
+
+    /*do not forget about borders!*/
+    .navigation ul li {
+        border: 2px solid rgb(0, 100, 0);
+    }
+    .navigation ul li:not(:last-child){
+        border: 2px solid rgb(0, 100, 0);
+        border-bottom: none;
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    /*change image-container background image*/
+    .image-container {background-image: url('../img/profile4.jpg');}
+
+    /*change document's background colour*/
+    /*change document's text colour*/
+    .container {
+        background-color: rgb(0, 0, 255, 0.135);
+        color: rgb(0, 0, 119);
+    }
+
+    /*do not forget about borders!*/
+    .navigation ul li {
+        border: 2px solid blue;
+        display: inline-block;
+        width: 15rem;
+    }
+    .navigation ul li:not(:last-child){
+        border: 2px solid blue;
+        border-bottom: 2px solid blue;
+        margin-right: 4rem;
+    }
+
+    .header h1 {
+        margin: 3rem auto;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+}
